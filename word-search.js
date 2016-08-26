@@ -34,8 +34,6 @@ let checkWord = function(word) {
 // const testWord = ['apple', 'Appalachia', 'apart'];
 
 // testWord.forEach((word) => {
-// 	let checkWord =
-// 	console.log("check: ", word.slice(0, searchTerm[0].length));
 // 	if (word.slice(0, searchTerm[0].length).toLowerCase() === searchTerm[0].toLowerCase()) {
 // 		console.log("match: ", word);
 // 	}

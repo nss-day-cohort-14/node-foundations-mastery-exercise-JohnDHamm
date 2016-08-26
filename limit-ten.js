@@ -6,7 +6,8 @@ let counter = 0;
 module.exports = Transform({
 	transform (buff, enc, cb) { //enhanced object literal
 		counter ++;
-		// console.log("counter: ", counter);
-		counter < 11 ? cb(null, buff) : cb(null, null); // Limit the results to only ten words
+		// console.log("counter: ", counter)
+		// counter < 11 ? cb(null, `${counter}: ${buff}`) : cb(null, null); // Limit the results to only ten words
+		counter > 10 ? this.end() : cb(null, `${counter}: ${buff}`); // Limit the results to only ten words
 	}
 });
